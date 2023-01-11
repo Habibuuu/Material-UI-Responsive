@@ -58,13 +58,13 @@ const Navbar = () => {
                         <Notifications />
                     </Badge>
                     <Avatar sx={{width: "30px", height: "30px"}}
-                            src="https://avatars.githubusercontent.com/u/90148400?s=400&u=412a24d23f1f3ff3e211b9322b9423d19f461e4a&v=4"
+                            src="https://avatars.githubusercontent.com/u/90148400?v=4"
                             onClick={(e) => setOpen(true)}
                             />
                 </IconsRight>
                 <UserBox>
                     <Avatar sx={{width: "30px", height: "30px"}}
-                            src="https://avatars.githubusercontent.com/u/90148400?s=400&u=412a24d23f1f3ff3e211b9322b9423d19f461e4a&v=4"
+                            src="https://avatars.githubusercontent.com/u/90148400?v=4"
                             onClick={(e) => setOpen(true)}
                             />
                     <Typography variant="span" onClick={(e) => setOpen(true)}>Jhone</Typography>
