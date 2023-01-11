@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { Button, styled, Typography } from "@mui/material";
+import { Add, Settings } from "@mui/icons-material";
 
 function App() {
+  const BlueButton = styled(Button)(({theme})=>({
+    backgroundColor: theme.palette.habib.main,
+        color:"#888",
+        margin: 5,
+        "&:hover":{
+            backgroundColor:"lightblue"
+        },
+        "&:disabled":{
+            backgroundColor:"gray",
+            color:"white"
+        }
+  }));
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Button variant="text">Text</Button>
+      <Button variant="contained" startIcon={<Settings/>} color="secondary">Settings</Button>
+      <Button variant="contained" startIcon={<Add/>} color="habib">Add New Post</Button>
+      <Button variant="outlined" disabled>Outlined</Button>
+      <Typography variant="h1" component="p">
+        It uses h1 style but it's a p tag
+    </Typography>
+    <Button variant="contained" disabled sx={{
+        backgroundColor:"skyblue",
+        color:"#888",
+        margin: 5,
+        "&:hover":{
+            backgroundColor:"lightblue"
+        },
+        "&:disabled":{
+            backgroundColor:"gray",
+            color:"white"
+        }
+    }}>My Button</Button>
+    <BlueButton variant="contained">Another Button</BlueButton>
     </div>
   );
 }
