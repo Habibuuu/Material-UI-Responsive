@@ -1,5 +1,5 @@
 import { AppBar, Avatar, Badge, Box, InputBase, Menu, MenuItem, styled, Toolbar, Typography } from "@mui/material";
-import { Mail, Airlines, Notifications } from "@mui/icons-material";
+import { Mail, ThreeP, Notifications } from "@mui/icons-material";
 import { useState } from "react";
 
 const StyledToolbar = styled(Toolbar)({
@@ -44,9 +44,9 @@ const Navbar = () => {
         <AppBar position="sticky">
             <StyledToolbar>
                 <IconsLeft>
-                    <Airlines/>
+                    <ThreeP/>
                     <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" }}}>
-                            Bibuuu
+                            ChatBU
                     </Typography>
                 </IconsLeft>
                 <Search><InputBase placeholder="Search...."/></Search>
@@ -58,13 +58,13 @@ const Navbar = () => {
                         <Notifications />
                     </Badge>
                     <Avatar sx={{width: "30px", height: "30px"}}
-                            src="https://avatars.githubusercontent.com/u/53551336?v=4"
+                            src="https://avatars.githubusercontent.com/u/90148400?s=400&u=412a24d23f1f3ff3e211b9322b9423d19f461e4a&v=4"
                             onClick={(e) => setOpen(true)}
                             />
                 </IconsRight>
                 <UserBox>
                     <Avatar sx={{width: "30px", height: "30px"}}
-                            src="https://avatars.githubusercontent.com/u/53551336?v=4"
+                            src="https://avatars.githubusercontent.com/u/90148400?s=400&u=412a24d23f1f3ff3e211b9322b9423d19f461e4a&v=4"
                             onClick={(e) => setOpen(true)}
                             />
                     <Typography variant="span" onClick={(e) => setOpen(true)}>Jhone</Typography>
